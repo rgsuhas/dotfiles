@@ -1,0 +1,74 @@
+{
+  "theme": {
+    "mode": "system",
+    "dark": "One Dark",
+    "light": "One Light"
+  },
+  "font_family": "JetBrains Mono",
+  "font_size": 14,
+  "buffer_font_family": "JetBrains Mono",
+  "buffer_font_size": 14,
+  "ui_font_size": 14,
+
+  "autosave": "on_focus_change",
+  "format_on_save": "on",
+  "tab_size": 2,
+  "soft_wrap": "editor_width",
+
+  "vim_mode": false,
+
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+
+  "auto_update": false,
+
+  "assistant": {
+    "enabled": false,
+    "version": "2"
+  },
+
+  "terminal": {
+    "shell": {
+      "program": "/usr/bin/bash"
+    },
+    "font_family": "JetBrains Mono",
+    "font_size": 13
+  },
+
+  "languages": {
+    "TypeScript": {
+      "tab_size": 2,
+      "format_on_save": "on"
+    },
+    "JavaScript": {
+      "tab_size": 2,
+      "format_on_save": "on"
+    },
+    "Python": {
+      "tab_size": 4,
+      "format_on_save": "on"
+    },
+    "Go": {
+      "tab_size": 4,
+      "format_on_save": "on"
+    }
+  },
+
+  "git": {
+    "inline_blame": {
+      "enabled": true,
+      "delay_ms": 600
+    }
+  },
+
+  "file_scan_exclusions": [
+    "**/.git",
+    "**/node_modules",
+    "**/.next",
+    "**/dist",
+    "**/__pycache__",
+    "**/.venv"
+  ]
+}
