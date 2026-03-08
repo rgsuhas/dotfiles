@@ -1,0 +1,51 @@
+# Starship config — fast, minimal, informative
+format = """
+$directory$git_branch$git_status$nodejs$python$golang$character"""
+
+add_newline = false
+
+[directory]
+style = "bold cyan"
+truncation_length = 3
+truncate_to_repo = true
+
+[git_branch]
+format = " [$symbol$branch]($style) "
+symbol = ""
+style = "bold purple"
+
+[git_status]
+format = '([$all_status$ahead_behind]($style) )'
+style = "bold red"
+conflicted = "⚡"
+ahead = "⇡${count}"
+behind = "⇣${count}"
+modified = "!${count}"
+untracked = "?${count}"
+staged = "+${count}"
+
+[nodejs]
+format = "[$symbol$version]($style) "
+symbol = " "
+style = "bold green"
+detect_files = ["package.json"]
+
+[python]
+format = "[$symbol$version]($style) "
+symbol = " "
+style = "bold yellow"
+detect_files = ["requirements.txt", "pyproject.toml", ".python-version"]
+
+[golang]
+format = "[$symbol$version]($style) "
+symbol = " "
+style = "bold cyan"
+detect_files = ["go.mod"]
+
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
+
+[cmd_duration]
+min_time = 2_000
+format = "took [$duration](bold yellow) "
