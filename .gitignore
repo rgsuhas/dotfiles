@@ -1,0 +1,9 @@
+# Never commit secrets
+*.env
+*.env.local
+**/secrets/
+**/.ssh/
+**/id_rsa*
+**/id_ed25519*
+*.key
+*.pem
